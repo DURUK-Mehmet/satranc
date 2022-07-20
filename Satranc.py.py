@@ -50,7 +50,9 @@ while True:#Skale57
         print("Kale yerinde durmuştur")
         break
     print(SKale["x57"],SKale["y57"])
-    
+
+#burdaki işlemleri mantığı ve sonuçlar doğrulandıktan sonra method haline getireceğim, bu şekilde uzun kodlar olmayacak 
+
 while True:#Skale64
     deger=int(input("Siyah Kale64'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Kontrol(deger)
@@ -68,6 +70,8 @@ while True:#Skale64
         print("Kale yerinde durmuştur")
         break
     print(SKale["x64"],SKale["y64"])
+
+#burdaki işlemleri mantığı ve sonuçlar doğrulandıktan sonra method haline getireceğim, bu şekilde uzun kodlar olmayacak 
 
 #deger=input("Beyaz Kale1'i nereye ilerletmek istiyorsunuz=")
 #deger=input("Beyaz Kale2'i nereye ilerletmek istiyorsunuz=")
