@@ -1,5 +1,5 @@
 def Kontrol(deger):
-    if deger>0:
+    if 65>deger>0:
         if deger%8==0:
             x_point=8
         else: 
@@ -32,7 +32,7 @@ Kale={"x1":1,
        "x64":8,
        "y64":8
        }
-while True:#Skale57
+while True:#kale57
     deger=int(input("Kale57'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Kontrol(deger)
     if kordinatlar[0]!=0 and kordinatlar[1]!=0:
@@ -52,7 +52,7 @@ while True:#Skale57
         print(Kale["x57"],Kale["y57"])
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while True:#Skale64
+while True:#kale64
     deger=int(input("Kale64'ü nereye ilerletmek istiyorsunuz="))
     kordinatlar=Kontrol(deger)
     if kordinatlar[0]!=0 and kordinatlar[1]!=0:
@@ -72,7 +72,7 @@ while True:#Skale64
         print(Kale["x64"],Kale["y64"])
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while True:#Skale8
+while True:#kale8
     deger=int(input("Kale8'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Kontrol(deger)
     if kordinatlar[0]!=0 and kordinatlar[1]!=0:
@@ -92,7 +92,7 @@ while True:#Skale8
         print(Kale["x8"],Kale["y8"])
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
     
-while True:#Skale1
+while True:#kale1
     deger=int(input("Kale1'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Kontrol(deger)
     if kordinatlar[0]!=0 and kordinatlar[1]!=0:
@@ -216,29 +216,189 @@ Fil={"x3":3,
      "x62":6,
      "y62":8
      }
-#while True:
-#    deger=int(input("Fil3'ü nereye ilerletmek istiyorsunuz="))
-#    kordinatlar=Kontrol(deger)
-#    print(kordinatlar)
-#    for i in range(9):
-#        if deger==
-    
-    
-    
-#deger=input("Siyah Fil2'i nereye ilerletmek istiyorsunuz=")
+degerFil=[3,6,59,62]
+while True:
+    deger=int(input("Fil3'ü nereye ilerletmek istiyorsunuz="))
+    kordinatlar=Kontrol(deger)
+    if kordinatlar[0]!=0 and kordinatlar[1]!=0:
+        print(kordinatlar)
+        for i in range(1,10):
+           if deger==(degerFil[0]+(7*i) or degerFil[0]-(7*i)):
+               degerFil[0]=deger
+               Fil["x3"]=kordinatlar[0]
+               Fil["y3"]=kordinatlar[1]
+               break
+           elif deger==(degerFil[0]+(9*i) or degerFil[0]-(9*i)):
+               degerFil[0]=deger
+               Fil["x3"]=kordinatlar[0]
+               Fil["y3"]=kordinatlar[1]
+               break
+           else: 
+               print("Hareket yanlış yapılmışıtr") 
+               break
+    else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-#deger=input("Beyaz Fil1'i nereye ilerletmek istiyorsunuz=")
-#deger=input("Beyaz Fil2'i nereye ilerletmek istiyorsunuz=")
+while True:
+    deger=int(input("Fil6'ı nereye ilerletmek istiyorsunuz="))
+    kordinatlar=Kontrol(deger)
+    if kordinatlar[1]!=0 and kordinatlar[1]!=0:
+        print(kordinatlar)
+        for i in range(1,10):
+           if deger==(degerFil[1]+(7*i) or degerFil[1]-(7*i)):
+               degerFil[1]=deger
+               Fil["x6"]=kordinatlar[0]
+               Fil["y6"]=kordinatlar[1]
+               break
+           elif deger==(degerFil[1]+(9*i) or degerFil[1]-(9*i)):
+               degerFil[1]=deger
+               Fil["x6"]=kordinatlar[0]
+               Fil["y6"]=kordinatlar[1]
+               break
+           else: 
+               print("Hareket yanlış yapılmışıtr") 
+               break
+    else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
+while True:
+    deger=int(input("Fil59'u nereye ilerletmek istiyorsunuz="))
+    kordinatlar=Kontrol(deger)
+    if kordinatlar[0]!=0 and kordinatlar[1]!=0:
+        print(kordinatlar)
+        for i in range(1,10):
+           if deger==(degerFil[2]+(7*i) or degerFil[2]-(7*i)):
+               degerFil[2]=deger
+               Fil["x59"]=kordinatlar[0]
+               Fil["y59"]=kordinatlar[1]
+               break
+           elif deger==(degerFil[2]+(9*i) or degerFil[2]-(9*i)):
+               degerFil[2]=deger
+               Fil["x59"]=kordinatlar[0]
+               Fil["y59"]=kordinatlar[1]
+               break
+           else: 
+               print("Hareket yanlış yapılmışıtr") 
+               break
+    else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
+
+while True:
+    deger=int(input("Fil62'i nereye ilerletmek istiyorsunuz="))
+    kordinatlar=Kontrol(deger)
+    if kordinatlar[0]!=0 and kordinatlar[1]!=0:
+        print(kordinatlar)
+        for i in range(1,10):
+           if deger==(degerFil[3]+(7*i) or degerFil[3]-(7*i)):
+               degerFil[3]=deger
+               Fil["x62"]=kordinatlar[0]
+               Fil["y62"]=kordinatlar[1]
+               break
+           elif deger==(degerFil[3]+(9*i) or degerFil[3]-(9*i)):
+               degerFil[3]=deger
+               Fil["x62"]=kordinatlar[0]
+               Fil["y62"]=kordinatlar[1]
+               break
+           else: 
+               print("Hareket yanlış yapılmışıtr") 
+               break
+    else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
+    
 #vezir
 Vezir={"x4":4,
        "y4":1,
        "x60":4,
        "y60":8
        }
-#deger=input("Siyah Vezir'i nereye ilerletmek istiyorsunuz=")
-
-#deger=input("Beayz Vezir'i nereye ilerletmek istiyorsunuz=")
+degerVezir=[4,60]
+while True:
+    deger=int(input("Vezir4'ü nereye ilerletmek istiyorsunuz="))
+    kordinatlar=Kontrol(deger)
+    if kordinatlar[0]!=0 and kordinatlar[1]!=0:
+        print(kordinatlar)
+        if kordinatlar[0]!=Vezir["x4"] and kordinatlar[1]==Vezir["y4"]:
+            degerVezir[0]=deger
+            Vezir["x4"]=kordinatlar[0]
+            break
+        elif kordinatlar[0]==Vezir["x4"] and kordinatlar[1]!=Vezir["y4"]:
+            Vezir["y4"]=kordinatlar[1]
+            degerVezir[0]=deger
+            break
+        elif kordinatlar[0]!=Vezir["x4"] and kordinatlar[1]!=Vezir["y4"]:
+            for i in range(1,10):
+               if deger==(degerVezir[0]+(7*i) or degerVezir[0]-(7*i)):
+                   degerVezir[0]=deger
+                   Vezir["x4"]=kordinatlar[0]
+                   Vezir["y4"]=kordinatlar[1]
+                   break
+               elif deger==(degerVezir[0]+(9*i) or degerVezir[0]-(9*i)):
+                   degerVezir[0]=deger
+                   Vezir["x4"]=kordinatlar[0]
+                   Vezir["y4"]=kordinatlar[1]
+                   break
+               else: 
+                   print("Hareket yanlış yapılmışıtr") 
+                   break
+        else:
+            print("Vezir yerinde durmuştur")
+            break
+        print(Vezir["x4"],Vezir["y4"])
+    else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
+    
+"""    
+while True:
+    deger=int(input("Vezir4'ü nereye ilerletmek istiyorsunuz="))
+    kordinatlar=Kontrol(deger)
+    if kordinatlar[0]!=0 and kordinatlar[1]!=0:
+        print(kordinatlar)
+        for i in range(1,10):
+           if deger==(degerVezir[0]+(7*i) or degerVezir[0]-(7*i)):
+               degerVezir[0]=deger
+               Vezir["x4"]=kordinatlar[0]
+               Vezir["y4"]=kordinatlar[1]
+               break
+           elif deger==(degerVezir[0]+(9*i) or degerVezir[0]-(9*i)):
+               degerVezir[0]=deger
+               Vezir["x4"]=kordinatlar[0]
+               Vezir["y4"]=kordinatlar[1]
+               break
+           else: 
+               print("Hareket yanlış yapılmışıtr") 
+               break
+    else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
+    
+"""
+while True:
+    deger=int(input("Vezir60'ı nereye ilerletmek istiyorsunuz="))
+    kordinatlar=Kontrol(deger)
+    if kordinatlar[0]!=0 and kordinatlar[1]!=0:
+        print(kordinatlar)
+        if kordinatlar[0]!=Vezir["x60"] and kordinatlar[1]==Vezir["y60"]:
+            degerVezir[1]=deger
+            Vezir["x60"]=kordinatlar[0]
+            break
+        elif kordinatlar[0]==Vezir["x60"] and kordinatlar[1]!=Vezir["y60"]:
+            Vezir["y60"]=kordinatlar[1]
+            degerVezir[1]=deger
+            break
+        elif kordinatlar[0]!=Vezir["x60"] and kordinatlar[1]!=Vezir["y60"]:
+            for i in range(1,10):
+               if deger==(degerVezir[1]+(7*i) or degerVezir[1]-(7*i)):
+                   degerVezir[1]=deger
+                   Vezir["x60"]=kordinatlar[0]
+                   Vezir["y60"]=kordinatlar[1]
+                   break
+               elif deger==(degerVezir[0]+(9*i) or degerVezir[1]-(9*i)):
+                   degerVezir[1]=deger
+                   Vezir["x60"]=kordinatlar[0]
+                   Vezir["y60"]=kordinatlar[1]
+                   break
+               else: 
+                   print("Hareket yanlış yapılmışıtr") 
+                   break
+        else:
+            print("Vezir yerinde durmuştur")
+            break
+        print(Vezir["x60"],Vezir["y60"])
+    else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
+  
 
 #Şah
 Sah={"x5":5,
