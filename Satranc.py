@@ -385,7 +385,7 @@ while True:
                    Vezir["x60"]=kordinatlar[0]
                    Vezir["y60"]=kordinatlar[1]
                    break
-               elif deger==(degerVezir[0]+(9*i) or degerVezir[1]-(9*i)):
+               elif deger==(degerVezir[1]+(9*i) or degerVezir[1]-(9*i)):
                    degerVezir[1]=deger
                    Vezir["x60"]=kordinatlar[0]
                    Vezir["y60"]=kordinatlar[1]
