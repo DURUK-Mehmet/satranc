@@ -2,11 +2,9 @@ def Kontrol(deger):
     if 65>deger>0:
         if deger%8==0:
             x_point=8
+            y_point=int(deger/8)
         else: 
             x_point=deger%8
-        if deger%8==0:
-            y_point=int(deger/8)
-        else:
             y_point=int(deger/8)+1
         kordinatlar=[x_point,y_point]
         return kordinatlar
@@ -14,7 +12,11 @@ def Kontrol(deger):
         kordinatlar=[0,0]
         return kordinatlar
 
-
+def filKordinat(deger,degerFil,x):
+    if deger==(degerFil+(7*x)) or deger==(degerFil-(7*x)) or deger==(degerFil+(9*x)) or deger==(degerFil-(9*x)):
+        return True
+    else:
+        return False
 
 x=8
 y=8
@@ -208,11 +210,7 @@ while False:
             print("Lütfen yeniden ve doğru değer giriniz")
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-def filKordinat(deger,degerFil,x):
-    if deger==(degerFil+(7*x)) or deger==(degerFil-(7*x)) or deger==(degerFil+(9*x)) or deger==(degerFil-(9*x)):
-        return True
-    else:
-        return False
+
     
 #Fil
 Fil={"x3":3,
