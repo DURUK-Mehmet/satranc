@@ -62,7 +62,7 @@ Kale={"x1":1,
        "x64":8,
        "y64":8
        }
-while False:#kale57
+while True:#kale57
     deger=int(input("Kale57'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -78,7 +78,7 @@ while False:#kale57
             break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
     
-while False:#kale64
+while True:#kale64
     deger=int(input("Kale64'ü nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -94,7 +94,7 @@ while False:#kale64
             break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while False:#kale8
+while True:#kale8
     deger=int(input("Kale8'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -110,7 +110,7 @@ while False:#kale8
             break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
     
-while False:#kale1
+while True:#kale1
     deger=int(input("Kale1'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -136,7 +136,7 @@ At={"x2":2,
     "x63":7,
     "y63":8
     }
-while False:
+while True:
     deger=int(input("At2'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -152,7 +152,7 @@ while False:
             break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while False:
+while True:
     deger=int(input("At7'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -168,7 +168,7 @@ while False:
             break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while False:
+while True:
     deger=int(input("At58'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -184,7 +184,7 @@ while False:
             break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while False:
+while True:
     deger=int(input("At63'ü nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -213,7 +213,7 @@ Fil={"x3":3,
      "y62":8
      }
 
-while False:
+while True:
     deger=int(input("Fil3'ü nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -230,7 +230,7 @@ while False:
                 break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
         
-while False:
+while True:
     deger=int(input("Fil6'ı nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -251,7 +251,7 @@ while False:
     else: 
         print("Verilen değer yanlıştır lütfen tekrar giriniz")
         
-while False:
+while True:
     deger=int(input("Fil59'u nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -270,7 +270,7 @@ while False:
             else: print("hata")
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while False:
+while True:
     deger=int(input("Fil62'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -295,7 +295,7 @@ Vezir={"x4":4,
        "x60":4,
        "y60":8
        }
-while False:
+while True:
     deger=int(input("Vezir4'ü nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -319,7 +319,7 @@ while False:
                 else: print("hata")
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while False:
+while True:
     deger=int(input("Vezir60'ı nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -349,7 +349,7 @@ Sah={"x5":5,
      "x61":5,
      "y61":8
      }
-while False:
+while True:
     deger=int(input("Şah5'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -365,7 +365,7 @@ while False:
             break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while False:
+while True:
     deger=int(input("Şah61'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
