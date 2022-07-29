@@ -11,13 +11,13 @@ def Control(deger):
         return [0,0]
 
 def crossCoordinate(x_point,y_point,x,y,i):
-    if x_point==(x+(1*i)) and y_point==(y+(1*i)):
+    if x_point==(x+i) and y_point==(y+i):
         return True
-    elif x_point==(x+(1*i)) and y_point==(y-(1*i)):
+    elif x_point==(x+i) and y_point==(y-i):
         return True
-    elif x_point==(x-(1*i)) and y_point==(y+(1*i)):
+    elif x_point==(x-i) and y_point==(y+i):
         return True
-    elif x_point==(x-(1*i)) and y_point==(y-(1*i)):
+    elif x_point==(x-i) and y_point==(y-i):
         return True
     else:
         return False
@@ -33,17 +33,17 @@ def flatCoordinate(x_point,y_point,x,y):
         return False
     
 def kingCoordinate(x_point,y_point,x,y):
-    if x_point==x or x_point==x+1 or x_point==x-1 and y_point==y or y_point==y+1 or y_point==y-1:
+    if (x_point==x or x_point==x+1 or x_point==x-1) and (y_point==y or y_point==y+1 or y_point==y-1):
         return True
     else:
         return False
     
 def LCoordinate(x_point,y_point,x,y):
-    if x_point==x+1 or x_point==x-1 and y_point==y+2 or y_point==y-2:
+    if (x_point==x+1 or x_point==x-1) and (y_point==y+2 or y_point==y-2):
         return True
-    elif x_point==x+2 or x_point==x-2 and y_point==y+1 or y_point==y-1:
+    elif (x_point==x+2 or x_point==x-2) and (y_point==y+1 or y_point==y-1):
         return True
-    elif x_point==x and y_point==y:
+    elif (x_point==x) and (y_point==y):
         return True
     else:
         return False
@@ -62,7 +62,7 @@ Kale={"x1":1,
        "x64":8,
        "y64":8
        }
-while True:#kale57
+while False:#kale57
     deger=int(input("Kale57'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -75,10 +75,9 @@ while True:#kale57
             break
         elif durum==False:
             print("Kale böyle hareket edemez,kordinatlar:{}-{}".format(Kale["x57"],Kale["y57"]))
-            break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
     
-while True:#kale64
+while False:#kale64
     deger=int(input("Kale64'ü nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -91,10 +90,9 @@ while True:#kale64
             break
         elif durum==False:
             print("Kale böyle hareket edemez,kordinatlar:{}-{}".format(Kale["x64"],Kale["y64"]))
-            break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while True:#kale8
+while False:#kale8
     deger=int(input("Kale8'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -107,10 +105,9 @@ while True:#kale8
             break
         elif durum==False:
             print("Kale böyle hareket edemez,kordinatlar:{}-{}".format(Kale["x8"],Kale["y8"]))
-            break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
     
-while True:#kale1
+while False:#kale1
     deger=int(input("Kale1'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -123,7 +120,6 @@ while True:#kale1
             break
         elif durum==False:
             print("Kale böyle hareket edemez,kordinatlar:{}-{}".format(Kale["x1"],Kale["y1"]))
-            break
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
 #At
@@ -147,12 +143,10 @@ while True:
             At["y2"]=kordinatlar[1]
             print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(At["x2"],At["y2"]))
             break
-        else:
-            print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(At["x2"],At["y2"]))
-            break
+        else:print("Hareket yanlış yapıldı, yeni kordinatlar:{}-{}".format(At["x2"],At["y2"]))
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while True:
+while False:
     deger=int(input("At7'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -163,12 +157,10 @@ while True:
             At["y7"]=kordinatlar[1]
             print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(At["x7"],At["y7"]))
             break
-        else:
-            print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(At["x7"],At["y7"]))
-            break
+        else:print("Hareket yanlış yapıldı, yeni kordinatlar:{}-{}".format(At["x7"],At["y7"]))
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while True:
+while False:
     deger=int(input("At58'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -179,12 +171,10 @@ while True:
             At["y58"]=kordinatlar[1]
             print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(At["x58"],At["y58"]))
             break
-        else:
-            print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(At["x58"],At["y58"]))
-            break
+        else:print("Hareket yanlış yapıldı, yeni kordinatlar:{}-{}".format(At["x58"],At["y58"]))
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while True:
+while False:
     deger=int(input("At63'ü nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -193,11 +183,9 @@ while True:
         if durum==True:
             At["x63"]=kordinatlar[0]
             At["y63"]=kordinatlar[1]
-            print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(At["x58"],At["y58"]))
+            print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(At["x63"],At["y63"]))
             break
-        else:
-            print("Hareket yanlış yapıldı, yeni kordinatlar:{}-{}".format(At["x58"],At["y58"]))
-            break
+        else:print("Hareket yanlış yapıldı, yeni kordinatlar:{}-{}".format(At["x63"],At["y63"]))
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
 
@@ -213,12 +201,12 @@ Fil={"x3":3,
      "y62":8
      }
 
-while True:
+while False:
     deger=int(input("Fil3'ü nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
     if kordinatlar[0]!=0 and kordinatlar[1]!=0:
-        for i in range(7):
+        for i in range(1,9):
             durum=crossCoordinate(kordinatlar[0],kordinatlar[1],Fil["x3"],Fil["y3"],i)
             if durum==True:
                 Fil["x3"]=kordinatlar[0]
@@ -227,37 +215,34 @@ while True:
                 break
             elif i==6 and durum==False:
                 print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Fil["x3"],Fil["y3"]))
-                break
+            else: print("hata")
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
         
-while True:
+while False:
     deger=int(input("Fil6'ı nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
     if kordinatlar[1]!=0 and kordinatlar[1]!=0:
         print(kordinatlar)
-        for i in range(1,10):
-           for i in range(7):
-               durum=crossCoordinate(kordinatlar[0],kordinatlar[1],Fil["x6"],Fil["y6"],i)
-               if durum==True:
-                   Fil["x6"]=kordinatlar[0]
-                   Fil["y6"]=kordinatlar[1]
-                   print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(Fil["x6"],Fil["y6"]))
-                   break
-               elif i==6 and durum==False:
-                   print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Fil["x6"],Fil["y6"]))
-                   break
-               else: print("hata")
-    else: 
-        print("Verilen değer yanlıştır lütfen tekrar giriniz")
+        for i in range(1,9):
+            durum=crossCoordinate(kordinatlar[0],kordinatlar[1],Fil["x6"],Fil["y6"],i)
+            if durum==True:
+                Fil["x6"]=kordinatlar[0]
+                Fil["y6"]=kordinatlar[1]
+                print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(Fil["x6"],Fil["y6"]))
+                break
+            elif i==6 and durum==False:
+                print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Fil["x6"],Fil["y6"]))
+            else: print("hata")
+    else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
         
-while True:
+while False:
     deger=int(input("Fil59'u nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
     if kordinatlar[0]!=0 and kordinatlar[1]!=0:
         print(kordinatlar)
-        for i in range(7):
+        for i in range(1,9):
             durum=crossCoordinate(kordinatlar[0],kordinatlar[1],Fil["x59"],Fil["y59"],i)
             if durum==True:
                 Fil["x59"]=kordinatlar[0]
@@ -266,17 +251,16 @@ while True:
                 break
             elif i==6 and durum==False:
                 print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Fil["x59"],Fil["y59"]))
-                break
             else: print("hata")
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while True:
+while False:
     deger=int(input("Fil62'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
     if kordinatlar[0]!=0 and kordinatlar[1]!=0:
         print(kordinatlar)
-        for i in range(7):
+        for i in range(1,9):
             durum=crossCoordinate(kordinatlar[0],kordinatlar[1],Fil["x62"],Fil["y62"],i)
             if durum==True:
                 Fil["x62"]=kordinatlar[0]
@@ -285,7 +269,6 @@ while True:
                 break
             elif i==6 and durum==False:
                 print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Fil["x62"],Fil["y62"]))
-                break
             else: print("hata")
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
     
@@ -295,7 +278,7 @@ Vezir={"x4":4,
        "x60":4,
        "y60":8
        }
-while True:
+while False:
     deger=int(input("Vezir4'ü nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -305,8 +288,9 @@ while True:
             Vezir["x4"]=kordinatlar[0]
             Vezir["y4"]=kordinatlar[1]
             print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format( Vezir["x4"], Vezir["y4"]))
+            break
         elif durum==False:
-            for i in range(7):
+            for i in range(1,9):
                 durum=crossCoordinate(kordinatlar[0],kordinatlar[1], Vezir["x4"],Vezir["y4"],i)
                 if durum==True:
                     Vezir["x4"]=kordinatlar[0]
@@ -315,11 +299,10 @@ while True:
                     break
                 elif i==6 and durum==False:
                     print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Fil["x4"],Fil["y4"]))
-                    break
                 else: print("hata")
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while True:
+while False:
     deger=int(input("Vezir60'ı nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -329,8 +312,9 @@ while True:
            Vezir["x60"]=kordinatlar[0]
            Vezir["y60"]=kordinatlar[1]
            print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format( Vezir["x60"], Vezir["y60"]))
+           break
        elif durum==False:
-            for i in range(7):
+            for i in range(1,9):
                 durum=crossCoordinate(kordinatlar[0],kordinatlar[1], Vezir["x60"],Vezir["y60"],i)
                 if durum==True:
                     Vezir["x60"]=kordinatlar[0]
@@ -339,7 +323,6 @@ while True:
                     break
                 elif i==6 and durum==False:
                     print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Fil["x60"],Fil["y60"]))
-                    break
                 else: print("hata")
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
   
@@ -349,7 +332,7 @@ Sah={"x5":5,
      "x61":5,
      "y61":8
      }
-while True:
+while False:
     deger=int(input("Şah5'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -360,12 +343,10 @@ while True:
             Sah["y5"]=kordinatlar[1]
             print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(Sah["x5"],Sah["y5"]))
             break
-        else:
-            print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Sah["x5"],Sah["y5"]))
-            break
+        else:print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Sah["x5"],Sah["y5"]))
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
-while True:
+while False:
     deger=int(input("Şah61'i nereye ilerletmek istiyorsunuz="))
     kordinatlar=Control(deger)
     print("girilen kordinatlar:{}".format(kordinatlar))
@@ -376,9 +357,7 @@ while True:
             Sah["y5"]=kordinatlar[1]
             print("Hareket doğru yapıldı, yeni kordinatlar:{}-{}".format(Sah["x61"],Sah["y61"]))
             break
-        else:
-            print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Sah["x61"],Sah["y61"]))
-            break
+        else:print("hareket yanlış yapılmıştır,kordinatlar:{}-{}".format(Sah["x61"],Sah["y61"]))
     else: print("Verilen değer yanlıştır lütfen tekrar giriniz")
 
 
