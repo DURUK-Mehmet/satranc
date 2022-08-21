@@ -10,7 +10,7 @@ def Control(deger):
     else: 
         return [0,0]
 
-def crossCoordinate(x_point,y_point,x,y,i):
+def CrossCoordinate(x_point,y_point,x,y,i):
     if x_point==(x+i) and y_point==(y+i):
         return True
     elif x_point==(x+i) and y_point==(y-i):
@@ -22,7 +22,7 @@ def crossCoordinate(x_point,y_point,x,y,i):
     else:
         return False
     
-def flatCoordinate(x_point,y_point,x,y):
+def FlatCoordinate(x_point,y_point,x,y):
     if x_point!=x and y_point==y:
         return True
     elif x_point==x and y_point!=y:
@@ -32,7 +32,7 @@ def flatCoordinate(x_point,y_point,x,y):
     else:
         return False
     
-def kingCoordinate(x_point,y_point,x,y):
+def KingCoordinate(x_point,y_point,x,y):
     if (x_point==x or x_point==x+1 or x_point==x-1) and (y_point==y or y_point==y+1 or y_point==y-1):
         return True
     else:
